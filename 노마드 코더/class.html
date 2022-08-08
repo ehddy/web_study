@@ -7,41 +7,35 @@
     <title>Document</title>
     <style>
         body {
+            height: 100vh;
             margin: 20px;
-        }
-
-        span {
-            /* inline은 위 아래에 padding이 가능하지만, margin는 위, 아래가 불가능하다. */
-            background-color: teal;
-
-        }
-    
-        .btn {
-            padding: 5px 10px;
-            margin: 10px;
-            border-radius: 10px;
-            color: aliceblue;
-
-        }
-
-        .tomato {
-            background-color: tomato;
+            display: flex;
+            /* 주축에만 적용 */
+            justify-content: space-between;
+            /* 주축이 수직이 된다 */
+            /* flex-direction: column; */
+            /* 수직축 위에서 적용 */
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
             
         }
 
-        .teal {
-            background-color: teal;
-        }
-     
+        /* flex box = 자식 엘레먼트에게 어떤 것도 적으면 안된다. 
+        부모 엘레먼트에만 적용*/
+    div {
+        width: 50
 
+    }
+
+    #second {
+        background-color: wheat;
+    }
     </style>    
 </head>
 <body>
-    <span class="teal btn">hello</span>
-    <span class="tomato btn">hello</span>
-    <span class="teal btn">hello</span>
-    <span class="tomato btn">hello</span>
-    <span class="teal btn">hello</span>
-    <span class="tomato btn">hello</span>
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
 </html>
