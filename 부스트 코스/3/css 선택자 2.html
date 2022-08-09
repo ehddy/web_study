@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 속성으로 css 꾸미기 */
+        p[class] {
+            color: silver;
+        }
+
+
+
+        p[class][id] {
+            text-decoration: underline;
+        }
+        
+        p[class='foo'] {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <p class="foo">Hello</p>
+    <p class="bar">CSS</p>
+    <p class="baz" id="title">HTML</p>
+
+</body>
+</html>
