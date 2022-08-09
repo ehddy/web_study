@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상 클래스 삽입 */
+        li:first-child {
+            color: red;
+        }
+        li:last-child {
+            color: blue;
+        }
+/* 아직 방문 안함 */
+        a:link {
+            color: blue;
+        }
+/* 이미 방문한 */
+        a:visited {
+            color: gray;
+        }
+
+
+        a:focus {
+            background-color: yellow;
+        }
+
+        a:hover {
+            font-weight: bold;
+            color: blueviolet;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- first child와 같은 가상 클래스 삽입 -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <a href="http://naver.com">네이버</a>
+    <a href="http://naver.com">네이버</a>
+    <a href="http://naver.com">네이버</a>
+</body>
+</html>
